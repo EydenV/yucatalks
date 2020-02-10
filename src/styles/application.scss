@@ -1,0 +1,89 @@
+
+$mdc-theme-primary: #E54800;
+$mdc-theme-secondary: #606A70;
+$mdc-theme-on-primary: #fff;
+$mdc-theme-on-secondary: #fff;
+
+@import "@material/drawer/mdc-drawer";
+@import "@material/elevation/mdc-elevation";
+@import "@material/list/mdc-list";
+@import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/icon-button/mdc-icon-button";
+@import "@material/layout-grid/mdc-layout-grid";
+
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+}
+
+.Typewriter__wrapper{
+  display: flex;
+  text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+                   10px 20px 5px rgba(0,0,0,0.05),
+                   -10px 20px 5px rgba(0,0,0,0.05);
+}
+
+.logo {
+  width: 100%;
+  text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+                 10px 20px 5px rgba(0,0,0,0.05),
+                 -10px 20px 5px rgba(0,0,0,0.05);
+}
+
+.nearsoft {
+  color: $mdc-theme-secondary;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10vw;
+}
+
+.yuca {
+  color: $mdc-theme-secondary;
+  font-family: 'Rubik', sans-serif;
+  font-size: 8vw;
+}
+
+.talks{
+  color: $mdc-theme-primary;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 8vw;
+}
+
+.right-align{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: x-large;
+  font-family: 'Rubik Mono One', serif;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.mdc-drawer-app-content {
+  flex: auto;
+  overflow: auto;
+  position: relative;
+}
+
+.main-content {
+  overflow: auto;
+  height: 100%;
+}
+
+.app-bar {
+  position: relative;
+}
+
+.typewriter-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  

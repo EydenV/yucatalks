@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first blog post</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link href="./dist/styles.css" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com/css?family=Rubik|Rubik+Mono+One|Montserrat&display=swap" rel="stylesheet">
+    <script src="./dist/index.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+  <body data-controller="app">
+        <aside class="mdc-drawer mdc-drawer--modal" data-target="app.drawer">
+        <div class="mdc-drawer__content">
+          <nav class="mdc-list" data-target="app.nav">
+            <a class="mdc-list-item mdc-list-item--activated" href="/" aria-current="page">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
+              <span class="mdc-list-item__text">Home</span>
+            </a>
+            <a class="mdc-list-item" href="https://nearsoft.com/">
+              <i class="material-icons mdc-list-item__graphic" aria-hidden="true"><img src="./assets/images/logo_orange.svg" width="100%"></i>
+              <span class="mdc-list-item__text">Nearsoft</span>
+            </a>
+          </nav>
+        </div>
+      </aside>
+
+    <div class="mdc-drawer-scrim"></div>
+        <div class="mdc-drawer-app-content">
+            <header class="mdc-top-app-bar app-bar" id="app-bar" data-target="app.appbar">
+    <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+        <a class="mdc-icon-button material-icons mdc-top-app-bar__navigation-icon">menu</a>
+        </section>
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+            <i>
+               <img src="./assets/images/yucatalks_white.svg">
+            </i>
+        </section>
+    </div>
+</header>
+
+          <main class="main-content" id="main-content">
+            <div class="mdc-top-app-bar--fixed-adjust">
+              <p>Some content</p>
+
+            </div>
+          </main>
+        </div>
+      </body>
+</html>
