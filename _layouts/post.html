@@ -5,7 +5,7 @@ layout: app
 <div class="post-container">
   <div class="mdc-layout-grid">
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
-      <h1 class="post-title">SOLID Principles</h1>
+      <h1 class="post-title">{{page.title}}</h1>
     </div>
    
 
@@ -16,19 +16,13 @@ layout: app
             <h2
               class="demo-card__title mdc-typography mdc-typography--headline6"
             >
-              Description
+            {{page.title}}
             </h2>
           </div>
           <div
             class="demo-card__secondary mdc-typography mdc-typography--body2"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud
+            {{page.description}}
           </div>
         </div>
       </div>
@@ -44,80 +38,41 @@ layout: app
           </div>
           <ul
             class="mdc-list demo-list mdc-list--two-line mdc-list--avatar-list"
-          >
+          >           
+            {% for assistant in page.assistants %}
             <li
-              class="mdc-list-item mdc-ripple-upgraded"
-              tabindex="0"
-              id="1def205b-41e4-4ab3-adbe-e471efedfff6"
-              style="--mdc-ripple-fg-size:360px; --mdc-ripple-fg-scale:1.7064; --mdc-ripple-fg-translate-start:172.227px, -133.773px; --mdc-ripple-fg-translate-end:120px, -144px;"
-            >
-              <span
-                class="mdc-list-item__graphic material-icons"
-                aria-hidden="true"
-                >person</span
-              ><span class="mdc-list-item__text"
-                ><span class="mdc-list-item__primary-text"
-                  >Eyden Villanueva</span
-                >
-                <span class="mdc-list-item__secondary-text"
-                  >evillanueva@nearsoft.com</span
-                >
-                
-                </span
-              ><span
-                class="mdc-list-item__meta material-icons"
-                aria-hidden="true"
-                >info</span
-              >
-            </li>
-            <li
-              class="mdc-list-item mdc-ripple-upgraded"
-              id="599c1033-dbcb-4c79-94f8-3d96b5b637bb"
-              tabindex="-1"
-            >
-              <span
-                class="mdc-list-item__graphic material-icons"
-                aria-hidden="true"
-                >person</span
-              ><span class="mdc-list-item__text"
-                ><span class="mdc-list-item__primary-text">Alfredo Granja</span
-                ><span class="mdc-list-item__secondary-text"
-                  >jgranja@nearsoft.com</span
-                ></span
-              ><span
-                class="mdc-list-item__meta material-icons"
-                aria-hidden="true"
-                >info</span
-              >
-            </li>
-
-            <li
-              class="mdc-list-item mdc-ripple-upgraded"
+            class="mdc-list-item mdc-ripple-upgraded my-list"
               id="3b1cc828-fc9d-409a-a034-d05cdf35f0fb"
               tabindex="-1"
             >
-              <span
+            <span
                 class="mdc-list-item__graphic material-icons"
                 aria-hidden="true"
-                >person</span
-              ><span class="mdc-list-item__text"
-                ><span class="mdc-list-item__primary-text">Sandra Herrera</span
+                >person</span>
+             
+              <span class="mdc-list-item__text"
+                ><span class="mdc-list-item__primary-text">{{assistant.name}}</span
                 ><span class="mdc-list-item__secondary-text"
-                  >sherrera@nearsoft.com</span
-                ></span
-              ><span
+                  >{{assistant.position}}, {{assistant.contact}} </span
+                >
+            
+              
+            </span>
+                <span
                 class="mdc-list-item__meta material-icons"
                 aria-hidden="true"
                 >info</span
               >
+             
             </li>
+            {% endfor %}
           </ul>
         </div>
       </div>
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
             <iframe
-              src="https://anchor.fm/alfredo-granja/embed/episodes/Test-episode-eaovmj"
-              height="200px"
+              src= {{page.audio-link}}
+              height="300px"
               width="100%"
               frameborder="0"
               scrolling="no"
