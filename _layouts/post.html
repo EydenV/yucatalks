@@ -7,78 +7,54 @@ layout: app
     <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
       <h1 class="post-title">{{page.title}}</h1>
     </div>
-   
-
     <div class="mdc-layout-grid__inner">
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
         <div class="mdc-card my-card">
           <div class="demo-card__primary">
-            <h2
-              class="demo-card__title mdc-typography mdc-typography--headline6"
-            >
+            <h2 class="demo-card__title mdc-typography mdc-typography--headline6">
             {{page.title}}
             </h2>
           </div>
-          <div
-            class="demo-card__secondary mdc-typography mdc-typography--body2"
-          >
+          <div class="demo-card__secondary mdc-typography mdc-typography--body2">
             {{page.description}}
           </div>
         </div>
       </div>
-
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
         <div class="mdc-card my-card">
           <div class="demo-card__primary">
-            <h2
-              class="demo-card__title mdc-typography mdc-typography--headline6"
-            >
+            <h2 class="demo-card__title mdc-typography mdc-typography--headline6">
               Assistants
             </h2>
           </div>
-          <ul
-            class="mdc-list demo-list mdc-list--two-line mdc-list--avatar-list"
-          >           
+          <ul class="mdc-list demo-list mdc-list--two-line mdc-list--avatar-list my-list">
             {% for assistant in page.assistants %}
-            <li
-            class="mdc-list-item mdc-ripple-upgraded my-list"
+            <li class="mdc-list-item mdc-ripple-upgraded"
               id="3b1cc828-fc9d-409a-a034-d05cdf35f0fb"
-              tabindex="-1"
-            >
-            <span
-                class="mdc-list-item__graphic material-icons"
-                aria-hidden="true"
-                >person</span>
-             
-              <span class="mdc-list-item__text"
-                ><span class="mdc-list-item__primary-text">{{assistant.name}}</span
-                ><span class="mdc-list-item__secondary-text"
-                  >{{assistant.position}}, {{assistant.contact}} </span
-                >
-            
-              
+              tabindex="-1">
+              <span class="mdc-list-item__graphic material-icons" aria-hidden="true">
+                person
+              </span>
+              <span class="mdc-list-item__text">
+                <span class="mdc-list-item__primary-text">{{assistant.name}}</span>
+                <span class="mdc-list-item__secondary-text">
+                  {{assistant.position}}, {{assistant.contact}}
+                </span>
             </span>
-                <span
-                class="mdc-list-item__meta material-icons"
-                aria-hidden="true"
-                >info</span
-              >
-             
+                <span class="mdc-list-item__meta material-icons" aria-hidden="true">
+                  info
+                </span>
             </li>
             {% endfor %}
           </ul>
         </div>
       </div>
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
-            <iframe
-              src= {{page.audio-link}}
-              height="300px"
-              width="100%"
-              frameborder="0"
-              scrolling="no"
-            ></iframe>
-          </div>
+        <iframe src= {{page.audio-link}} height="300px" width="100%"
+          frameborder="0"
+          scrolling="no">
+        </iframe>
+      </div>
     </div>
-    
   </div>
 </div>
