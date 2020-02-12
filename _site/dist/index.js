@@ -1153,7 +1153,7 @@ eval("module.exports = extend\n\nvar hasOwnProperty = Object.prototype.hasOwnPro
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./app_controller.js\": \"./src/scripts/controllers/app_controller.js\",\n\t\"./giphy_controller.js\": \"./src/scripts/controllers/giphy_controller.js\",\n\t\"./index_controller.js\": \"./src/scripts/controllers/index_controller.js\",\n\t\"./typewriter_controller.js\": \"./src/scripts/controllers/typewriter_controller.js\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/scripts/controllers sync recursive \\\\.js$\";\n\n//# sourceURL=webpack:///./src/scripts/controllers_sync_\\.js$?");
+eval("var map = {\n\t\"./app_controller.js\": \"./src/scripts/controllers/app_controller.js\",\n\t\"./giphy_controller.js\": \"./src/scripts/controllers/giphy_controller.js\",\n\t\"./typewriter_controller.js\": \"./src/scripts/controllers/typewriter_controller.js\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src/scripts/controllers sync recursive \\\\.js$\";\n\n//# sourceURL=webpack:///./src/scripts/controllers_sync_\\.js$?");
 
 /***/ }),
 
@@ -1178,17 +1178,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var stim
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var stimulus__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! stimulus */ \"./node_modules/stimulus/index.js\");\n// src/controllers/appBar_controller.js\n\nconst axios = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (class extends stimulus__WEBPACK_IMPORTED_MODULE_0__[\"Controller\"] {\n    static get targets() {\n        return []\n      }\n    connect() {\n      let image = this.element;\n      this.url = 'https://api.giphy.com/v1/gifs/random?api_key=SBVvRPx3fnRlm2SKHoraxB1vsbaUn4Tt&tag=sorry&rating=G'\n\n      axios.get(this.url)\n      .then(function (response) {\n        // handle success\n        let src = response.data.data.fixed_height_downsampled_url;\n        console.log(response.data\n            );\n         image.src = src;\n      })\n      .catch(function (error) {\n        // handle error\n        console.log(error);\n      })\n      .finally(function () {\n        // always executed\n      });\n    }\n});\n\n//# sourceURL=webpack:///./src/scripts/controllers/giphy_controller.js?");
-
-/***/ }),
-
-/***/ "./src/scripts/controllers/index_controller.js":
-/*!*****************************************************!*\
-  !*** ./src/scripts/controllers/index_controller.js ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("\n\n//# sourceURL=webpack:///./src/scripts/controllers/index_controller.js?");
 
 /***/ }),
 
