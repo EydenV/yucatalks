@@ -27,7 +27,7 @@ layout: app
                                 <p class="card-date">{{ post.date | date_to_string }}</p>
                             </div>
                             <article class="mdc-typography--body2">
-                                <h2 class="card-title"><a href="{{post.url | relative_url}}" class="title-link">{{post.title}}</a></h2>
+                                <h2 class="card-title"><a href="yucatalks{{post.url | relative_url}}" class="title-link">{{post.title}}</a></h2>
                                 <div class="card-overflow card-text">
                                   <p class="card-description-text">{{ post.description }}</p>
                                 </div>
