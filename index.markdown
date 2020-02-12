@@ -29,7 +29,7 @@ layout: app
                             <article class="mdc-typography--body2">
                                 <h2 class="card-title"><a href="{{post.url}}" class="title-link">{{post.title}}</a></h2>
                                 <div class="card-overflow card-text">
-                                  {{ post.content }}
+                                  <p class="card-description-text">{{ post.description }}</p>
                                 </div>
                             </article>
                         </div>

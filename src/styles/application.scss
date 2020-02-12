@@ -40,6 +40,10 @@ body {
   color: $mdc-theme-on-title;
 }
 
+.card-description-text{
+  font-size: 1;
+}
+
 .title-link:hover{
   text-decoration: underline;
 }
@@ -70,6 +74,7 @@ body {
 .card-text > *{
   font-family: 'Rubik', sans-serif;
   font-size: 1.5vw !important;
+  font-weight: lighter;
 }
 
 .nearsoft {
@@ -144,7 +149,7 @@ body {
   position: relative;
 }
 
-.my-list{
+.overflow-container{
   overflow: scroll;
 }
 
