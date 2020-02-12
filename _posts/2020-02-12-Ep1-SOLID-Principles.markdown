@@ -5,7 +5,7 @@ description: We dive into the history and motivation of the SOLID principles whi
 audio-link: https://anchor.fm/alfredo-granja/embed/episodes/Test-episode-eaovmj
 date: 2020-02-07 22:26:23 -0600
 categories: jekyll
-permalink: :title
+permalink: /:title
 assistants: [{name: Alfredo Granja, photo_url: /assets/images/jgranja.png, position: intern,contact: jgranja@nearsoft.com}, {name: Sandra Herrera, photo_url: /assets/images/sherrera.png, position: intern,  contact: sherrera@nearsoft.com}, {name: Eyden Villanueva, photo_url: /assets/images/evillanueva.png ,position: intern, contact: evillanueva@nearsoft.com}]
 resources: [{ name : "What If SOLID? - Enrique Mote", link: "https://medium.com/@mote_enrique/what-if-solid-fcdf12524a89"}]
 ---
