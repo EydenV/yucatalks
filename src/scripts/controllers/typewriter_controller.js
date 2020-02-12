@@ -7,19 +7,12 @@ export default class extends Controller {
         return []
       }
     connect() {
-        this.typer = new Typewriter(this.element, {
-            delay: 75,
-            cursor: ''
-          });
-          this.typer
-            .typeString('<div class=\"nearsoft\">nearsoft</div>')
-            .pauseFor(3000)
-            .deleteAll()
-            .typeString('<div class=\"yuca\">YUCA</div> <div class=\"talks\">TALKS</div>')
-            .pauseFor(3000)
-            .deleteAll()
-            .typeString('<div class=\"yuca\">COMING</div> <div class=\"talks\">SOON</div>')
-            .start();
-          
+      this.typer = new Typewriter(this.element, {
+          delay: 75,
+          cursor: ''
+        });
+        this.typer
+          .typeString('<div class=\"yuca\">YUCA</div> <div class=\"talks\">TALKS</div>')
+          .start();
     }
 }

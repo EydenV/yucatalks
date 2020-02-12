@@ -1,4 +1,4 @@
-
+$mdc-theme-on-title: #202020;
 $mdc-theme-primary: #E54800;
 $mdc-theme-secondary: #606A70;
 $mdc-theme-on-primary: #fff;
@@ -11,6 +11,8 @@ $mdc-theme-on-secondary: #fff;
 @import "@material/top-app-bar/mdc-top-app-bar";
 @import "@material/icon-button/mdc-icon-button";
 @import "@material/layout-grid/mdc-layout-grid";
+@import "@material/card/mdc-card";
+
 
 body {
   display: flex;
@@ -33,22 +35,59 @@ body {
                  -10px 20px 5px rgba(0,0,0,0.05);
 }
 
+.title-link{
+  text-decoration: none;
+  color: $mdc-theme-on-title;
+}
+
+.title-link:hover{
+  text-decoration: underline;
+}
+
+.card-title {
+  font-family: 'Rubik', sans-serif;
+  font-size: 2vw;
+  color: $mdc-theme-on-title;
+}
+
+.card-date {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.2vw;
+  color: $mdc-theme-secondary;
+}
+
+.card-overflow {
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.card-padding{
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  padding-bottom: 1.5vw;
+}
+
+.card-text > *{
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5vw !important;
+}
+
 .nearsoft {
   color: $mdc-theme-secondary;
   font-family: 'Montserrat', sans-serif;
-  font-size: 10vw;
+  font-size: 4vw;
 }
 
 .yuca {
   color: $mdc-theme-secondary;
   font-family: 'Rubik', sans-serif;
-  font-size: 8vw;
+  font-size: 4vw;
 }
 
 .talks{
   color: $mdc-theme-primary;
   font-family: 'Rubik Mono One', sans-serif;
-  font-size: 8vw;
+  font-size: 4vw;
 }
 .post-title{
   color: $mdc-theme-primary;
@@ -72,7 +111,7 @@ body {
   flex-direction: column;
   align-items: center;
   font-size: x-large;
-  font-family: 'Rubik Mono One', serif;
+  font-family: 'Rubik', serif;
   margin-left: 5vw;
   margin-right: 5vw;
 }
