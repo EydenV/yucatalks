@@ -83,7 +83,6 @@ body {
   align-items: center;
   margin-left: 6vw;
   margin-right: 6vw;
- 
 }
 
 .my-card{
@@ -106,10 +105,12 @@ body {
   position: relative;
 }
 
+.my-list{
+  overflow: scroll;
+}
+
 .typewriter-container{
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-  
