@@ -15,9 +15,20 @@ layout: app
             Description
             </h2>
           </div>
-          <div class="demo-card__secondary mdc-typography mdc-typography--body2">
+          <div class="demo-card__secondary mdc-typography mdc-typography--body2 overflow-container">
             {{page.description}}
           </div>
+          <div class="demo-card__primary">
+            <h2 class="demo-card__title mdc-typography mdc-typography--headline6">
+            Resources
+            </h2>
+          </div>
+          <div class="demo-card__secondary mdc-typography mdc-typography--body2 overflow-container">
+          {% for resource in page.resources %}
+              <a href="{{resource.link}}" target="blank">{{resource.name}}</a>
+              <br>
+          {% endfor %}
+        </div>
         </div>
       </div>
       <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
@@ -27,13 +38,13 @@ layout: app
               Assistants
             </h2>
           </div>
-          <ul class="mdc-list demo-list mdc-list--two-line mdc-list--avatar-list my-list">
+          <ul class="mdc-list demo-list mdc-list--two-line mdc-list--avatar-list overflow-container">
             {% for assistant in page.assistants %}
             <li class="mdc-list-item mdc-ripple-upgraded"
               id="3b1cc828-fc9d-409a-a034-d05cdf35f0fb"
               tabindex="-1">
               <span class="mdc-list-item__graphic material-icons" aria-hidden="true">
-                person
+                <img src="{{assistant.photo_url}}" width="50px" style="border-radius: 50%;">
               </span>
               <span class="mdc-list-item__text">
                 <span class="mdc-list-item__primary-text">{{assistant.name}}</span>
